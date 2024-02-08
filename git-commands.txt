@@ -1,0 +1,7 @@
+Git basic commands
+-> git status  
+-> git init (for installization is this folder)
+if u got red color files that represent that are not in staging state
+-> git add <filename>  (add file to the staging area)
+or -> git add .    (to add all non-ignored files in current directory into staging area)
+
