@@ -4,4 +4,26 @@ Git basic commands
 if u got red color files that represent that are not in staging state
 -> git add <filename>  (add file to the staging area)
 or -> git add .    (to add all non-ignored files in current directory into staging area)
+After adding, you can see green color on filenames.
+Now we have added our changes to staging area. We need to commit these changes.
+-> git commit -m "Your message"
+To view the history of commits:
+-> git log or simply git l
+For seeing the differences between two points in time(commits):
+git config --global.user.email  "your_email@example.com"
+git config  --global user.name  "Your Name"
+-> git diff [first-commit]..[second-commit]
+You can also use tags for comparing any point with a tagged version.
+git ls-files
+This command lists all the files in the repository indexed by git.
+-> git rm  <file name> (delete the untracked file from working tree and remove it from the index
+if it’s currently tracked)
+if u want to delete from staging area  as well then use :
+-> git rm --cached <file name>
+how to save modified  content of a file back into the repository?
+-> git checkout -- [file path] 
 
+
+
+branching  concept:  A branch is basically a different line of development work which diverges from master at some point in time 
+How to update existing branch with latest code from master ?
